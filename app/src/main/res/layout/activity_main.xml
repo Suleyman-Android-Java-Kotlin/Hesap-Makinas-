@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/deger1"
+        android:layout_width="291dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/idcarpma"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/deger2"
+        android:layout_width="291dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idcarpma" />
+
+    <Button
+        android:id="@+id/idcarpma"
+        style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="7dp"
+        android:layout_marginStart="13dp"
+        android:onClick="carpma"
+        android:text="*"
+        app:layout_constraintBottom_toTopOf="@+id/deger2"
+        app:layout_constraintEnd_toStartOf="@+id/idbolme"
+        app:layout_constraintStart_toEndOf="@+id/idcikarma"
+        app:layout_constraintTop_toBottomOf="@+id/deger1" />
+
+    <Button
+        android:id="@+id/idbolme"
+        style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="17dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="12dp"
+        android:onClick="bolme"
+        android:text="/"
+        app:layout_constraintBottom_toTopOf="@+id/deger2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/idcarpma"
+        app:layout_constraintTop_toBottomOf="@+id/deger1" />
+
+    <Button
+        android:id="@+id/idcikarma"
+        style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="17dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:onClick="cikarma"
+        android:text="-"
+        app:layout_constraintBottom_toTopOf="@+id/deger2"
+        app:layout_constraintEnd_toStartOf="@+id/idcarpma"
+        app:layout_constraintStart_toEndOf="@+id/idtoplama"
+        app:layout_constraintTop_toBottomOf="@+id/deger1" />
+
+    <Button
+        android:id="@+id/idtoplama"
+        style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="17dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="12dp"
+        android:onClick="toplama"
+        android:text="+"
+        app:layout_constraintBottom_toTopOf="@+id/deger2"
+        app:layout_constraintEnd_toStartOf="@+id/idcikarma"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deger1" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="220dp"
+        android:layout_marginEnd="178dp"
+        android:layout_marginStart="163dp"
+        android:layout_marginTop="47dp"
+        android:text="Sonuç:"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deger2" />
+
+</android.support.constraint.ConstraintLayout>
